@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: #156cae;
+            
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        /* Layout Container */
+        .layout {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #156cae;
+            color: white;
+            width: 250px;
+            padding: 10px;
+            box-sizing: border-box;
+            height: calc(100vh - 50px); /* Full height minus header height */
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #15e2e2;
+        }
+
+        /* Main Content */
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+
+        .red1-circle {
+            
+            
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        
+
+        .main-content {
+            
+            flex: 1;
+            background-color: rgb(228, 215, 215);
+            padding: 20px;
+            overflow-y: auto; /* Allow scrolling if content overflows */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .t1{
+            border-radius: 500%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ADMIN</h1>
+    </header>
+
+    <!-- Layout Container -->
+    <div class="layout">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="#home">Dashboard</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            
+            <div class="blue">
+                <div class="red1-circle">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="t1">
+                    <table style="width:100%">
+                        <tr>
+                            <td>Section T1</td>
+                    <p>This is some content for section t1.</p>
+                
+                </tr>
+                </div>
+                <div class="t2">
+                    <h2>Section T2</h2>
+                    <p>This is some content for section t2.</p>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
